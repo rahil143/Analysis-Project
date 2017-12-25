@@ -6,10 +6,43 @@
     <Name>Analysis Project.database</Name>
     <FullPath>Analysis Project.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>DIM_CITY.dim</Name>
+      <FullPath>DIM_CITY.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>WWIDW DS.ds</Name>
+      <FullPath>WWIDW DS.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>WWIDW DSV.dsv</Name>
+      <FullPath>WWIDW DSV.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>WWIDW DS</Id>
+            <Name>WWIDW DS</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=WideWorldImportersDW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>WWIDW DS</Id>
+            <Name>WWIDW DS</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
